@@ -1,0 +1,169 @@
+@import 'differnet_resolutions';
+
+$font-stack: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+
+@mixin absolute-position-color-white() {
+	color: white;
+    position: absolute;
+}
+
+@mixin set-top-right($top,$right){
+	top: $top;
+	right: $right;
+}
+
+@mixin set-top-left($top,$left){
+	top: $top;
+	left: $left;
+}
+
+@mixin set-bottom-right($bottom,$right){
+	bottom: $bottom;
+	right: $right;
+}
+
+@mixin set-bottom-left($bottom,$left){
+	bottom: $bottom;
+	left: $left;
+}
+
+@mixin set-panel-properties(){
+	background-color:rgba(0,0,0,0.8);
+	border-radius: 4px;
+	height: 100px;
+	width: 200px;
+	padding: 5px;
+	display: none;
+}
+
+@mixin transform-translate($x,$y){
+	transform: translate($x,$y);
+	-webkit-transform: translate($x,$y);
+}
+	
+@mixin se-font-height-line-height($font-size,$padding,$line-height){
+	font-size: $font-size;
+	padding: $padding;
+	line-height: $line-height;
+}
+
+body, html {
+    height: 100%;
+	font-family: $font-stack
+}
+
+.bg { 
+    /* The image used */
+    background-image: url("../img/background.jpg");
+
+    /* Full height */
+    height: 95%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#weather-toggle{
+   @include set-top-right(20px,20px);
+   @include absolute-position-color-white();
+ }
+ 
+#weather-panel{
+	@include set-top-right(40px,10px);
+	@include set-panel-properties();
+	@include absolute-position-color-white();
+}
+
+#links-toggle{
+   @include set-top-left(20px,20px);
+   @include absolute-position-color-white();
+  }
+  
+#links-panel{
+	@include set-top-left(40px,10px);
+	@include set-panel-properties();
+	@include absolute-position-color-white();
+}
+
+#location-toggle{
+   @include set-bottom-left(20px,20px);
+   @include absolute-position-color-white();
+  }
+  
+#location-panel{
+	@include set-bottom-left(40px,10px);
+	@include set-panel-properties();
+	@include absolute-position-color-white();
+}
+  
+#todos-toggle{
+   @include set-bottom-right(20px,20px);
+   @include absolute-position-color-white();
+ }
+
+#todos-panel{
+	@include set-bottom-right(40px,10px);
+	@include set-panel-properties();
+	@include absolute-position-color-white();
+}
+ 
+
+/* Centered text */
+#centered {
+	margin: auto;
+	text-align: center;
+	vertical-align: middle;
+	@include set-top-left(50%,50%);
+	@include absolute-position-color-white();
+	@include transform-translate(-50%, -50%);
+}
+
+#time{
+	@include se-font-height-line-height(900%,0px,0.75em);
+	#display:none;
+}
+
+#greeting{
+	@include se-font-height-line-height(220%,0px,0.75em);
+}
+
+
+#centered-below {
+	margin: auto;
+	text-align: center;
+	vertical-align: middle;
+	@include set-top-left(70%,50%);
+	@include absolute-position-color-white();
+	@include transform-translate(-50%, -50%);
+}
+
+#today-todos{
+	@include se-font-height-line-height(180%,0px,0.75em);
+}
+
+#today-todos-input{
+	@include se-font-height-line-height(180%,0px,0.75em);
+	border-bottom: 2px solid white;
+}
+
+#today-todos-input-text{
+	background: transparent;
+    border: none;
+	font-size:24px;
+	color:white;
+	text-align:center;
+	outline:0;
+}
+ 
+#centered-bottom{
+   @include set-bottom-left(20px,50%);
+   @include absolute-position-color-white();
+   @include transform-translate(-50%, -50%);
+}
+
+#centered-bottom-quote{
+	@include se-font-height-line-height(120%,0px,0.75em);
+}
+

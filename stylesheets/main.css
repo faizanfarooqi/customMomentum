@@ -1,0 +1,390 @@
+@media screen and (max-height: 500px) {
+  /* line 2, ../sass/differnet_resolutions.scss */
+  #time {
+    display: none;
+  }
+}
+@media screen and (max-height: 300px) {
+  /* line 8, ../sass/differnet_resolutions.scss */
+  #centered-bottom {
+    display: none;
+  }
+}
+@media screen and (max-height: 220px) {
+  /* line 14, ../sass/differnet_resolutions.scss */
+  #centered-below {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 21, ../sass/differnet_resolutions.scss */
+  #weather-toggle {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    color: white;
+    transform: translate(-12%, 0%);
+    -webkit-transform: translate(-12%, 0%);
+  }
+
+  /* line 31, ../sass/differnet_resolutions.scss */
+  #weather-panel {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 4px;
+    height: 100px;
+    width: 200px;
+    padding: 5px;
+    display: none;
+  }
+
+  /* line 44, ../sass/differnet_resolutions.scss */
+  #links-toggle {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+  }
+
+  /* line 53, ../sass/differnet_resolutions.scss */
+  #links-panel {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 4px;
+    height: 100px;
+    width: 200px;
+    padding: 5px;
+    display: none;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+  }
+
+  /* line 68, ../sass/differnet_resolutions.scss */
+  #location-toggle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+  }
+
+  /* line 77, ../sass/differnet_resolutions.scss */
+  #location-panel {
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 4px;
+    height: 100px;
+    width: 200px;
+    padding: 5px;
+    display: none;
+  }
+
+  /* line 90, ../sass/differnet_resolutions.scss */
+  #todos-toggle {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    color: white;
+    transform: translate(-10%, 0%);
+    -webkit-transform: translate(-10%, 0%);
+  }
+
+  /* line 99, ../sass/differnet_resolutions.scss */
+  #todos-panel {
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 4px;
+    height: 100px;
+    width: 200px;
+    padding: 5px;
+    display: none;
+  }
+
+  /* Centered text */
+  /* line 114, ../sass/differnet_resolutions.scss */
+  #centered {
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+  }
+
+  /* line 126, ../sass/differnet_resolutions.scss */
+  #time {
+    font-size: 400%;
+    padding-top: 10px;
+    line-height: 0.75em;
+    #display: none;
+  }
+
+  /* line 133, ../sass/differnet_resolutions.scss */
+  #greeting {
+    font-size: 200%;
+    padding: 0px;
+    line-height: 0.75em;
+  }
+
+  /* line 140, ../sass/differnet_resolutions.scss */
+  #centered-below {
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+  }
+
+  /* line 152, ../sass/differnet_resolutions.scss */
+  #today-todos {
+    font-size: 180%;
+    padding: 0px;
+    line-height: 0.75em;
+  }
+
+  /* line 158, ../sass/differnet_resolutions.scss */
+  #today-todos-input {
+    font-size: 180%;
+    padding: 0px;
+    line-height: 0.75em;
+    border-bottom: 2px solid white;
+  }
+
+  /* line 165, ../sass/differnet_resolutions.scss */
+  #today-todos-input-text {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    outline: 0;
+  }
+
+  /* line 174, ../sass/differnet_resolutions.scss */
+  #centered-bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+
+  /* line 183, ../sass/differnet_resolutions.scss */
+  #centered-bottom-quote {
+    font-size: 120%;
+    padding: 0px;
+    line-height: 0.75em;
+  }
+}
+/* line 50, ../sass/main.scss */
+body, html {
+  height: 100%;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+}
+
+/* line 55, ../sass/main.scss */
+.bg {
+  /* The image used */
+  background-image: url("../img/background.jpg");
+  /* Full height */
+  height: 95%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 68, ../sass/main.scss */
+#weather-toggle {
+  top: 20px;
+  right: 20px;
+  color: white;
+  position: absolute;
+}
+
+/* line 73, ../sass/main.scss */
+#weather-panel {
+  top: 40px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  height: 100px;
+  width: 200px;
+  padding: 5px;
+  display: none;
+  color: white;
+  position: absolute;
+}
+
+/* line 79, ../sass/main.scss */
+#links-toggle {
+  top: 20px;
+  left: 20px;
+  color: white;
+  position: absolute;
+}
+
+/* line 84, ../sass/main.scss */
+#links-panel {
+  top: 40px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  height: 100px;
+  width: 200px;
+  padding: 5px;
+  display: none;
+  color: white;
+  position: absolute;
+}
+
+/* line 90, ../sass/main.scss */
+#location-toggle {
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  position: absolute;
+}
+
+/* line 95, ../sass/main.scss */
+#location-panel {
+  bottom: 40px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  height: 100px;
+  width: 200px;
+  padding: 5px;
+  display: none;
+  color: white;
+  position: absolute;
+}
+
+/* line 101, ../sass/main.scss */
+#todos-toggle {
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  position: absolute;
+}
+
+/* line 106, ../sass/main.scss */
+#todos-panel {
+  bottom: 40px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  height: 100px;
+  width: 200px;
+  padding: 5px;
+  display: none;
+  color: white;
+  position: absolute;
+}
+
+/* Centered text */
+/* line 114, ../sass/main.scss */
+#centered {
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  top: 50%;
+  left: 50%;
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+/* line 123, ../sass/main.scss */
+#time {
+  font-size: 900%;
+  padding: 0px;
+  line-height: 0.75em;
+  #display: none;
+}
+
+/* line 128, ../sass/main.scss */
+#greeting {
+  font-size: 220%;
+  padding: 0px;
+  line-height: 0.75em;
+}
+
+/* line 133, ../sass/main.scss */
+#centered-below {
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  top: 70%;
+  left: 50%;
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+/* line 142, ../sass/main.scss */
+#today-todos {
+  font-size: 180%;
+  padding: 0px;
+  line-height: 0.75em;
+}
+
+/* line 146, ../sass/main.scss */
+#today-todos-input {
+  font-size: 180%;
+  padding: 0px;
+  line-height: 0.75em;
+  border-bottom: 2px solid white;
+}
+
+/* line 151, ../sass/main.scss */
+#today-todos-input-text {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  outline: 0;
+}
+
+/* line 160, ../sass/main.scss */
+#centered-bottom {
+  bottom: 20px;
+  left: 50%;
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+/* line 166, ../sass/main.scss */
+#centered-bottom-quote {
+  font-size: 120%;
+  padding: 0px;
+  line-height: 0.75em;
+}
