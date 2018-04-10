@@ -1,23 +1,213 @@
+/* line 48, ../sass/main.scss */
+body, html {
+  height: 100%;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+}
+
+/* line 53, ../sass/main.scss */
+.bg {
+  /* The image used */
+  background-image: url("../img/background.jpg");
+  /* Full height */
+  height: 95%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 66, ../sass/main.scss */
+#weather-toggle {
+  top: 20px;
+  right: 20px;
+  color: white;
+  position: absolute;
+}
+
+/* line 71, ../sass/main.scss */
+#weather-panel {
+  top: 40px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  height: 100px;
+  width: 200px;
+  padding: 5px;
+  display: none;
+  color: white;
+  position: absolute;
+}
+
+/* line 77, ../sass/main.scss */
+#links-toggle {
+  top: 20px;
+  left: 20px;
+  color: white;
+  position: absolute;
+}
+
+/* line 82, ../sass/main.scss */
+#links-panel {
+  top: 40px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  height: 100px;
+  width: 200px;
+  padding: 5px;
+  display: none;
+  color: white;
+  position: absolute;
+}
+
+/* line 88, ../sass/main.scss */
+#location-toggle {
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  position: absolute;
+}
+
+/* line 93, ../sass/main.scss */
+#location-panel {
+  bottom: 40px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  height: 100px;
+  width: 200px;
+  padding: 5px;
+  display: none;
+  color: white;
+  position: absolute;
+}
+
+/* line 99, ../sass/main.scss */
+#todos-toggle {
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  position: absolute;
+}
+
+/* line 104, ../sass/main.scss */
+#todos-panel {
+  bottom: 40px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  height: 100px;
+  width: 200px;
+  padding: 5px;
+  display: none;
+  color: white;
+  position: absolute;
+}
+
+/* Centered text */
+/* line 112, ../sass/main.scss */
+#centered {
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  top: 50%;
+  left: 50%;
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+/* line 121, ../sass/main.scss */
+#time {
+  font-size: 900%;
+  padding: 0px;
+  line-height: 0.75em;
+  #display: none;
+}
+
+/* line 126, ../sass/main.scss */
+#greeting {
+  font-size: 220%;
+  padding: 0px;
+  line-height: 0.75em;
+}
+
+/* line 131, ../sass/main.scss */
+#centered-below {
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  top: 70%;
+  left: 50%;
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+/* line 140, ../sass/main.scss */
+#today-todos {
+  font-size: 180%;
+  padding: 0px;
+  line-height: 0.75em;
+}
+
+/* line 144, ../sass/main.scss */
+#today-todos-input {
+  font-size: 180%;
+  padding: 0px;
+  line-height: 0.75em;
+  border-bottom: 2px solid white;
+}
+
+/* line 149, ../sass/main.scss */
+#today-todos-input-text {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  outline: 0;
+}
+
+/* line 158, ../sass/main.scss */
+#centered-bottom {
+  bottom: 20px;
+  left: 50%;
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+/* line 164, ../sass/main.scss */
+#centered-bottom-quote {
+  font-size: 120%;
+  padding: 0px;
+  line-height: 0.75em;
+}
+
 @media screen and (max-height: 500px) {
-  /* line 2, ../sass/differnet_resolutions.scss */
+  /* line 169, ../sass/main.scss */
   #time {
     display: none;
   }
 }
 @media screen and (max-height: 300px) {
-  /* line 8, ../sass/differnet_resolutions.scss */
+  /* line 175, ../sass/main.scss */
   #centered-bottom {
     display: none;
   }
 }
 @media screen and (max-height: 220px) {
-  /* line 14, ../sass/differnet_resolutions.scss */
+  /* line 181, ../sass/main.scss */
   #centered-below {
     display: none;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 21, ../sass/differnet_resolutions.scss */
+  /* line 188, ../sass/main.scss */
   #weather-toggle {
     position: absolute;
     top: 60%;
@@ -27,7 +217,7 @@
     -webkit-transform: translate(-12%, 0%);
   }
 
-  /* line 31, ../sass/differnet_resolutions.scss */
+  /* line 198, ../sass/main.scss */
   #weather-panel {
     position: absolute;
     top: 40px;
@@ -41,7 +231,7 @@
     display: none;
   }
 
-  /* line 44, ../sass/differnet_resolutions.scss */
+  /* line 211, ../sass/main.scss */
   #links-toggle {
     position: absolute;
     top: 45%;
@@ -51,7 +241,7 @@
     -webkit-transform: translate(-50%, 0%);
   }
 
-  /* line 53, ../sass/differnet_resolutions.scss */
+  /* line 220, ../sass/main.scss */
   #links-panel {
     position: absolute;
     top: 48%;
@@ -67,7 +257,7 @@
     -webkit-transform: translate(-50%, 0%);
   }
 
-  /* line 68, ../sass/differnet_resolutions.scss */
+  /* line 235, ../sass/main.scss */
   #location-toggle {
     position: absolute;
     top: 50%;
@@ -77,7 +267,7 @@
     -webkit-transform: translate(-50%, 0%);
   }
 
-  /* line 77, ../sass/differnet_resolutions.scss */
+  /* line 244, ../sass/main.scss */
   #location-panel {
     position: absolute;
     bottom: 40px;
@@ -91,7 +281,7 @@
     display: none;
   }
 
-  /* line 90, ../sass/differnet_resolutions.scss */
+  /* line 257, ../sass/main.scss */
   #todos-toggle {
     position: absolute;
     top: 55%;
@@ -101,7 +291,7 @@
     -webkit-transform: translate(-10%, 0%);
   }
 
-  /* line 99, ../sass/differnet_resolutions.scss */
+  /* line 266, ../sass/main.scss */
   #todos-panel {
     position: absolute;
     bottom: 40px;
@@ -116,7 +306,7 @@
   }
 
   /* Centered text */
-  /* line 114, ../sass/differnet_resolutions.scss */
+  /* line 281, ../sass/main.scss */
   #centered {
     margin: auto;
     text-align: center;
@@ -129,7 +319,7 @@
     -webkit-transform: translate(-50%, 0%);
   }
 
-  /* line 126, ../sass/differnet_resolutions.scss */
+  /* line 293, ../sass/main.scss */
   #time {
     font-size: 400%;
     padding-top: 10px;
@@ -137,14 +327,14 @@
     #display: none;
   }
 
-  /* line 133, ../sass/differnet_resolutions.scss */
+  /* line 300, ../sass/main.scss */
   #greeting {
     font-size: 200%;
     padding: 0px;
     line-height: 0.75em;
   }
 
-  /* line 140, ../sass/differnet_resolutions.scss */
+  /* line 307, ../sass/main.scss */
   #centered-below {
     margin: auto;
     text-align: center;
@@ -157,14 +347,14 @@
     -webkit-transform: translate(-50%, 0%);
   }
 
-  /* line 152, ../sass/differnet_resolutions.scss */
+  /* line 319, ../sass/main.scss */
   #today-todos {
     font-size: 180%;
     padding: 0px;
     line-height: 0.75em;
   }
 
-  /* line 158, ../sass/differnet_resolutions.scss */
+  /* line 325, ../sass/main.scss */
   #today-todos-input {
     font-size: 180%;
     padding: 0px;
@@ -172,7 +362,7 @@
     border-bottom: 2px solid white;
   }
 
-  /* line 165, ../sass/differnet_resolutions.scss */
+  /* line 332, ../sass/main.scss */
   #today-todos-input-text {
     background: transparent;
     border: none;
@@ -182,7 +372,7 @@
     outline: 0;
   }
 
-  /* line 174, ../sass/differnet_resolutions.scss */
+  /* line 341, ../sass/main.scss */
   #centered-bottom {
     position: absolute;
     bottom: 20px;
@@ -192,199 +382,10 @@
     -webkit-transform: translate(-50%, -50%);
   }
 
-  /* line 183, ../sass/differnet_resolutions.scss */
+  /* line 350, ../sass/main.scss */
   #centered-bottom-quote {
     font-size: 120%;
     padding: 0px;
     line-height: 0.75em;
   }
-}
-/* line 50, ../sass/main.scss */
-body, html {
-  height: 100%;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
-}
-
-/* line 55, ../sass/main.scss */
-.bg {
-  /* The image used */
-  background-image: url("../img/background.jpg");
-  /* Full height */
-  height: 95%;
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* line 68, ../sass/main.scss */
-#weather-toggle {
-  top: 20px;
-  right: 20px;
-  color: white;
-  position: absolute;
-}
-
-/* line 73, ../sass/main.scss */
-#weather-panel {
-  top: 40px;
-  right: 10px;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 4px;
-  height: 100px;
-  width: 200px;
-  padding: 5px;
-  display: none;
-  color: white;
-  position: absolute;
-}
-
-/* line 79, ../sass/main.scss */
-#links-toggle {
-  top: 20px;
-  left: 20px;
-  color: white;
-  position: absolute;
-}
-
-/* line 84, ../sass/main.scss */
-#links-panel {
-  top: 40px;
-  left: 10px;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 4px;
-  height: 100px;
-  width: 200px;
-  padding: 5px;
-  display: none;
-  color: white;
-  position: absolute;
-}
-
-/* line 90, ../sass/main.scss */
-#location-toggle {
-  bottom: 20px;
-  left: 20px;
-  color: white;
-  position: absolute;
-}
-
-/* line 95, ../sass/main.scss */
-#location-panel {
-  bottom: 40px;
-  left: 10px;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 4px;
-  height: 100px;
-  width: 200px;
-  padding: 5px;
-  display: none;
-  color: white;
-  position: absolute;
-}
-
-/* line 101, ../sass/main.scss */
-#todos-toggle {
-  bottom: 20px;
-  right: 20px;
-  color: white;
-  position: absolute;
-}
-
-/* line 106, ../sass/main.scss */
-#todos-panel {
-  bottom: 40px;
-  right: 10px;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 4px;
-  height: 100px;
-  width: 200px;
-  padding: 5px;
-  display: none;
-  color: white;
-  position: absolute;
-}
-
-/* Centered text */
-/* line 114, ../sass/main.scss */
-#centered {
-  margin: auto;
-  text-align: center;
-  vertical-align: middle;
-  top: 50%;
-  left: 50%;
-  color: white;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-}
-
-/* line 123, ../sass/main.scss */
-#time {
-  font-size: 900%;
-  padding: 0px;
-  line-height: 0.75em;
-  #display: none;
-}
-
-/* line 128, ../sass/main.scss */
-#greeting {
-  font-size: 220%;
-  padding: 0px;
-  line-height: 0.75em;
-}
-
-/* line 133, ../sass/main.scss */
-#centered-below {
-  margin: auto;
-  text-align: center;
-  vertical-align: middle;
-  top: 70%;
-  left: 50%;
-  color: white;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-}
-
-/* line 142, ../sass/main.scss */
-#today-todos {
-  font-size: 180%;
-  padding: 0px;
-  line-height: 0.75em;
-}
-
-/* line 146, ../sass/main.scss */
-#today-todos-input {
-  font-size: 180%;
-  padding: 0px;
-  line-height: 0.75em;
-  border-bottom: 2px solid white;
-}
-
-/* line 151, ../sass/main.scss */
-#today-todos-input-text {
-  background: transparent;
-  border: none;
-  font-size: 24px;
-  color: white;
-  text-align: center;
-  outline: 0;
-}
-
-/* line 160, ../sass/main.scss */
-#centered-bottom {
-  bottom: 20px;
-  left: 50%;
-  color: white;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-}
-
-/* line 166, ../sass/main.scss */
-#centered-bottom-quote {
-  font-size: 120%;
-  padding: 0px;
-  line-height: 0.75em;
 }
