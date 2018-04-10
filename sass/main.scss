@@ -39,7 +39,7 @@ $font-stack: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
 	-webkit-transform: translate($x,$y);
 }
 	
-@mixin se-font-height-line-height($font-size,$padding,$line-height){
+@mixin set-font-height-line-height($font-size,$padding,$line-height){
 	font-size: $font-size;
 	padding: $padding;
 	line-height: $line-height;
@@ -119,12 +119,12 @@ body, html {
 }
 
 #time{
-	@include se-font-height-line-height(900%,0px,0.75em);
+	@include set-font-height-line-height(900%,0px,0.75em);
 	#display:none;
 }
 
 #greeting{
-	@include se-font-height-line-height(220%,0px,0.75em);
+	@include set-font-height-line-height(220%,0px,0.75em);
 }
 
 
@@ -138,11 +138,11 @@ body, html {
 }
 
 #today-todos{
-	@include se-font-height-line-height(180%,0px,0.75em);
+	@include set-font-height-line-height(180%,0px,0.75em);
 }
 
 #today-todos-input{
-	@include se-font-height-line-height(180%,0px,0.75em);
+	@include set-font-height-line-height(180%,0px,0.75em);
 	border-bottom: 2px solid white;
 }
 
@@ -162,7 +162,7 @@ body, html {
 }
 
 #centered-bottom-quote{
-	@include se-font-height-line-height(120%,0px,0.75em);
+	@include set-font-height-line-height(120%,0px,0.75em);
 }
 
 @media screen and (max-height: 500px) {
@@ -186,94 +186,52 @@ body, html {
 
 @media screen and (max-width: 480px) {
     #weather-toggle{
-		   position:absolute;
-		   top:60%;
-		   left:50%;
-		   color: white;
-		   transform: translate(-12%, -0%);
-			-webkit-transform: translate(-12%, -0%);
-		   
-		 }
+		   @include set-top-left(60%,50%);
+		   @include absolute-position-color-white();
+		   @include transform-translate(-12%, -0%);
+		}
 		 
 		#weather-panel{
-			position:absolute;
-			top:40px;
-			right:10px;
-			background-color:rgba(0,0,0,0.8);
-			color: white;
-			border-radius: 4px;
-			height: 100px;
-			width: 200px;
-			padding: 5px;
-			display: none;
+			@include set-top-right(40px,10px);
+			@include absolute-position-color-white();
+			@include set-panel-properties();
 		}
 
 		#links-toggle{
-		   position:absolute;
-		   top:45%;
-		   left:50%;
-		   color: white;
-		   transform: translate(-50%, -0%);
-			-webkit-transform: translate(-50%, -0%);
-		  }
+		   @include set-top-left(45%,50%);
+		   @include absolute-position-color-white();
+		   @include transform-translate(-50%, -0%);
+		}
 		  
 		#links-panel{
-			position:absolute;
-			top:48%;
-			left:50%;
-			background-color:rgba(0,0,0,0.8);
-			color: white;
-			border-radius: 4px;
-			height: 100px;
-			width: 200px;
-			padding: 5px;
-			display:none;
-			transform: translate(-50%, -0%);
-			-webkit-transform: translate(-50%, -0%);
+			@include set-top-left(48%,50%);
+			@include absolute-position-color-white();
+			@include set-panel-properties();
+			@include transform-translate(-50%, -0%);
 		}
 
 		#location-toggle{
-		   position:absolute;
-		   top:50%;
-		   left:50%;
-		   color: white;
-		   transform: translate(-50%, -0%);
-			-webkit-transform: translate(-50%, -0%);
+		   @include set-top-left(50%,50%);
+		   @include absolute-position-color-white();
+		   @include transform-translate(-50%, -0%);
 		  }
 		  
 		#location-panel{
-			position:absolute;
-			bottom:40px;
-			left:10px;
-			background-color:rgba(0,0,0,0.8);
-			color: white;
-			border-radius: 4px;
-			height: 100px;
-			width: 200px;
-			padding: 5px;
-			display: none;
+			@include set-top-left(40px,10px);
+			@include absolute-position-color-white();
+			@include set-panel-properties();
 		}
 		  
 		#todos-toggle{
-		   position:absolute;
-		   top:55%;
-		   left:50%;
-		   color: white;
-		   transform: translate(-10%, -0%);
-			-webkit-transform: translate(-10%, -0%);
+		   @include set-top-left(55%,50%);
+		   @include absolute-position-color-white();
+		   @include transform-translate(-10%, -0%);
 		  }
 
 		#todos-panel{
-			position:absolute;
-			bottom:40px;
-			right:10px;
-			background-color:rgba(0,0,0,0.8);
-			color: white;
-			border-radius: 4px;
-			height: 100px;
-			width: 200px;
-			padding: 5px;
-			display: none;
+			@include set-bottom-right(40px,10px);
+			@include absolute-position-color-white();
+			@include set-panel-properties();
 		}
 		 
 
@@ -282,50 +240,34 @@ body, html {
 			margin: auto;
 			text-align: center;
 			vertical-align: middle;
-			position: absolute;
-			top:0;
-			left: 50%;
-			color:white;
-			transform: translate(-50%, -0%);
-			-webkit-transform: translate(-50%, -0%);
+			@include set-top-left(0,50%);
+			@include absolute-position-color-white();
+			@include transform-translate(-50%, -0%);
 		}
 
 		#time{
-			font-size: 400%;
-			padding-top: 10px;
-			line-height: 0.75em;
-			#display:none;
+			@include set-font-height-line-height(400%,10px,0.75em);
 		}
 
 		#greeting{
-			font-size: 200%;
-			padding: 0px;
-			line-height: 0.75em;
+			@include set-font-height-line-height(200%,0px,0.75em);
 		}
-
 
 		#centered-below {
 			margin: auto;
 			text-align: center;
 			vertical-align: middle;
-			position: absolute;
-			top: 20%;
-			left: 50%;
-			color:white;
-			transform: translate(-50%, -0%);
-			-webkit-transform: translate(-50%, -0%);
+			@include set-top-left(20%,50%);
+			@include absolute-position-color-white();
+			@include transform-translate(-50%, -0%);
 		}
 
 		#today-todos{
-			font-size: 180%;
-			padding: 0px;
-			line-height: 0.75em;
+			@include set-font-height-line-height(180%,0px,0.75em);
 		}
 
 		#today-todos-input{
-			font-size: 180%;
-			padding: 0px;
-			line-height: 0.75em;
+			@include set-font-height-line-height(180%,0px,0.75em);
 			border-bottom: 2px solid white;
 		}
 
@@ -339,17 +281,12 @@ body, html {
 		}
 		 
 		#centered-bottom{
-		   position:absolute;
-		   bottom:20px;
-		   left:50%;
-		   color: white;
-		   transform: translate(-50%, -50%);
-			-webkit-transform: translate(-50%, -50%);
+		   @include set-bottom-left(20px,50%);
+		   @include absolute-position-color-white();
+		   @include transform-translate(-50%, -50%);
 		}
 
 		#centered-bottom-quote{
-			font-size: 120%;
-			padding: 0px;
-			line-height: 0.75em;
+			@include set-font-height-line-height(120%,0px,0.75em);
 		}
 }

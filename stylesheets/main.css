@@ -209,21 +209,21 @@ body, html {
 @media screen and (max-width: 480px) {
   /* line 188, ../sass/main.scss */
   #weather-toggle {
-    position: absolute;
     top: 60%;
     left: 50%;
     color: white;
+    position: absolute;
     transform: translate(-12%, 0%);
     -webkit-transform: translate(-12%, 0%);
   }
 
-  /* line 198, ../sass/main.scss */
+  /* line 194, ../sass/main.scss */
   #weather-panel {
-    position: absolute;
     top: 40px;
     right: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
     color: white;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 4px;
     height: 100px;
     width: 200px;
@@ -231,23 +231,23 @@ body, html {
     display: none;
   }
 
-  /* line 211, ../sass/main.scss */
+  /* line 200, ../sass/main.scss */
   #links-toggle {
-    position: absolute;
     top: 45%;
     left: 50%;
     color: white;
+    position: absolute;
     transform: translate(-50%, 0%);
     -webkit-transform: translate(-50%, 0%);
   }
 
-  /* line 220, ../sass/main.scss */
+  /* line 206, ../sass/main.scss */
   #links-panel {
-    position: absolute;
     top: 48%;
     left: 50%;
-    background-color: rgba(0, 0, 0, 0.8);
     color: white;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 4px;
     height: 100px;
     width: 200px;
@@ -257,23 +257,23 @@ body, html {
     -webkit-transform: translate(-50%, 0%);
   }
 
-  /* line 235, ../sass/main.scss */
+  /* line 213, ../sass/main.scss */
   #location-toggle {
-    position: absolute;
     top: 50%;
     left: 50%;
     color: white;
+    position: absolute;
     transform: translate(-50%, 0%);
     -webkit-transform: translate(-50%, 0%);
   }
 
-  /* line 244, ../sass/main.scss */
+  /* line 219, ../sass/main.scss */
   #location-panel {
-    position: absolute;
-    bottom: 40px;
+    top: 40px;
     left: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
     color: white;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 4px;
     height: 100px;
     width: 200px;
@@ -281,23 +281,23 @@ body, html {
     display: none;
   }
 
-  /* line 257, ../sass/main.scss */
+  /* line 225, ../sass/main.scss */
   #todos-toggle {
-    position: absolute;
     top: 55%;
     left: 50%;
     color: white;
+    position: absolute;
     transform: translate(-10%, 0%);
     -webkit-transform: translate(-10%, 0%);
   }
 
-  /* line 266, ../sass/main.scss */
+  /* line 231, ../sass/main.scss */
   #todos-panel {
-    position: absolute;
     bottom: 40px;
     right: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
     color: white;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 4px;
     height: 100px;
     width: 200px;
@@ -306,55 +306,54 @@ body, html {
   }
 
   /* Centered text */
-  /* line 281, ../sass/main.scss */
+  /* line 239, ../sass/main.scss */
   #centered {
     margin: auto;
     text-align: center;
     vertical-align: middle;
-    position: absolute;
     top: 0;
     left: 50%;
     color: white;
+    position: absolute;
     transform: translate(-50%, 0%);
     -webkit-transform: translate(-50%, 0%);
   }
 
-  /* line 293, ../sass/main.scss */
+  /* line 248, ../sass/main.scss */
   #time {
     font-size: 400%;
-    padding-top: 10px;
+    padding: 10px;
     line-height: 0.75em;
-    #display: none;
   }
 
-  /* line 300, ../sass/main.scss */
+  /* line 252, ../sass/main.scss */
   #greeting {
     font-size: 200%;
     padding: 0px;
     line-height: 0.75em;
   }
 
-  /* line 307, ../sass/main.scss */
+  /* line 256, ../sass/main.scss */
   #centered-below {
     margin: auto;
     text-align: center;
     vertical-align: middle;
-    position: absolute;
     top: 20%;
     left: 50%;
     color: white;
+    position: absolute;
     transform: translate(-50%, 0%);
     -webkit-transform: translate(-50%, 0%);
   }
 
-  /* line 319, ../sass/main.scss */
+  /* line 265, ../sass/main.scss */
   #today-todos {
     font-size: 180%;
     padding: 0px;
     line-height: 0.75em;
   }
 
-  /* line 325, ../sass/main.scss */
+  /* line 269, ../sass/main.scss */
   #today-todos-input {
     font-size: 180%;
     padding: 0px;
@@ -362,7 +361,7 @@ body, html {
     border-bottom: 2px solid white;
   }
 
-  /* line 332, ../sass/main.scss */
+  /* line 274, ../sass/main.scss */
   #today-todos-input-text {
     background: transparent;
     border: none;
@@ -372,17 +371,17 @@ body, html {
     outline: 0;
   }
 
-  /* line 341, ../sass/main.scss */
+  /* line 283, ../sass/main.scss */
   #centered-bottom {
-    position: absolute;
     bottom: 20px;
     left: 50%;
     color: white;
+    position: absolute;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
   }
 
-  /* line 350, ../sass/main.scss */
+  /* line 289, ../sass/main.scss */
   #centered-bottom-quote {
     font-size: 120%;
     padding: 0px;
